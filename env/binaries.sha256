@@ -1,0 +1,3 @@
+ced1af5d19949f961c6f12805c384b8b8e8d0f6c368c5091c06259f54e3329be  surreal (coverage build, in ganda-cov/surrealdb:3.3.4)
+e4cab10c4c069de5ced5a873a09cd049032f39d54b7d8d8ca0e87c4095a3d597  arangod (coverage build, in ganda-cov/arangodb:3.12.11)
+47e700ccb0fdb9e27c5241353f8161938f4e53c3561dd35e063c5fe88dc3349b  jacocoagent.jar (OrientDB's coverage agent)

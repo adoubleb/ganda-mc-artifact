@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "t": "meta",
+    "started": "2026-11-01T09:19:50+0800",
+    "element": "llvm_counter",
+    "profile_dir": "/home/hakam/ganda/mc-eval/eval12h-shared/surrealdb-A/surrealdb-A-profile",
+    "idle_seconds": 5.0,
+    "idle_every": 900.0,
+    "image": "ganda-cov/surrealdb:3.3.4"
+  },
+  "seeds": 427,
+  "cases": 90768,
+  "executable_lines": 174899,
+  "covered_lines": 39350,
+  "line_coverage_pct": 22.499,
+  "compared_lines": 28325,
+  "background_lines": 2261,
+  "replicate_noise_lines": 3746,
+  "split_window_lines_dropped": 26,
+  "replicate_seeds": 427,
+  "replicate_windows": 490291,
+  "mc_pairwise_lines": 14588,
+  "mc_pairwise_lines_raw": 18334,
+  "mc_pairwise_of_covered_pct": 37.072,
+  "mc_pairwise_of_executable_pct": 8.341,
+  "zero_mc_pairwise_cases": 16013,
+  "repeats": 0,
+  "repeat_diff_lines": 0,
+  "data_model_pairs": {
+    "doc~graph": {
+      "mc_lines": 13977,
+      "pairs": 162173
+    },
+    "doc~rel": {
+      "mc_lines": 10705,
+      "pairs": 148436
+    },
+    "graph~rel": {
+      "mc_lines": 12028,
+      "pairs": 183720
+    }
+  },
+  "generators": {
+    "ir_path": {
+      "mc_pairwise_lines": 6506,
+      "compared_lines": 14393,
+      "cases": 1278
+    },
+    "ir_select": {
+      "mc_pairwise_lines": 7272,
+      "compared_lines": 23917,
+      "cases": 76680
+    },
+    "ir_traversal": {
+      "mc_pairwise_lines": 11586,
+      "compared_lines": 20077,
+      "cases": 12810
+    }
+  },
+  "components": {
+    "executor": {
+      "lines": 36161,
+      "covered": 11336,
+      "background": 48,
+      "replicate_noise": 536,
+      "mc_pairwise": 5704,
+      "covered_pct": 31.349,
+      "mc_pairwise_of_covered_pct": 50.318,
+      "share_of_mc_pairwise_pct": 39.101
+    },
+    "planner": {
+      "lines": 7993,
+      "covered": 3565,
+      "background": 0,
+      "replicate_noise": 0,
+      "mc_pairwise": 2452,
+      "covered_pct": 44.602,
+      "mc_pairwise_of_covered_pct": 68.78,
+      "share_of_mc_pairwise_pct": 16.808
+    },
+    "expressions": {
+      "lines": 32079,
+      "covered": 5191,
+      "background": 269,
+      "replicate_noise": 314,
+      "mc_pairwise": 2262,
+      "covered_pct": 16.182,
+      "mc_pairwise_of_covered_pct": 43.575,
+      "share_of_mc_pairwise_pct": 15.506
+    },
+    "indexes": {
+      "lines": 18486,
+      "covered": 4364,
+      "background": 0,
+      "replicate_noise": 399,
+      "mc_pairwise": 1811,
+      "covered_pct": 23.607,
+      "mc_pairwise_of_covered_pct": 41.499,
+      "share_of_mc_pairwise_pct": 12.414
+    },
+    "parser": {
+      "lines": 14370,
+      "covered": 3374,
+      "background": 0,
+      "replicate_noise": 35,
+      "mc_pairwise": 1185,
+      "covered_pct": 23.479,
+      "mc_pairwise_of_covered_pct": 35.122,
+      "share_of_mc_pairwise_pct": 8.123
+    },
+    "storage": {
+      "lines": 23751,
+      "covered": 6773,
+      "background": 1445,
+      "replicate_noise": 2014,
+      "mc_pairwise": 799,
+      "covered_pct": 28.517,
+      "mc_pairwise_of_covered_pct": 11.797,
+      "share_of_mc_pairwise_pct": 5.477
+    },
+    "other": {
+      "lines": 6917,
+      "covered": 1437,
+      "background": 352,
+      "replicate_noise": 225,
+      "mc_pairwise": 289,
+      "covered_pct": 20.775,
+      "mc_pairwise_of_covered_pct": 20.111,
+      "share_of_mc_pairwise_pct": 1.981
+    },
+    "catalog": {
+      "lines": 4183,
+      "covered": 534,
+      "background": 81,
+      "replicate_noise": 208,
+      "mc_pairwise": 74,
+      "covered_pct": 12.766,
+      "mc_pairwise_of_covered_pct": 13.858,
+      "share_of_mc_pairwise_pct": 0.507
+    },
+    "server": {
+      "lines": 30959,
+      "covered": 2776,
+      "background": 66,
+      "replicate_noise": 15,
+      "mc_pairwise": 12,
+      "covered_pct": 8.967,
+      "mc_pairwise_of_covered_pct": 0.432,
+      "share_of_mc_pairwise_pct": 0.082
+    }
+  },
+  "twin": {
+    "seeds": 428,
+    "cases": 90981,
+    "covered_lines": 39351,
+    "line_coverage_pct": 22.499
+  },
+  "agreement": {
+    "mc_pairwise_jaccard_before_noise": 0.9866,
+    "covered_jaccard": 1.0
+  },
+  "inputs": {
+    "surrealdb-A-windows.jsonl.gz": "029ceb3dbf4d306dbffe5bcffbef0581bf0f06e848dbc9313d7d16e8c1b9ba7e",
+    "surrealdb.json": "f0e0675e7b584fa5bfc239c530e9f7773e8585ac5191858401b2e311ccb6f10a",
+    "surrealdb-B-windows.jsonl.gz": "3900e30630bbeb889e74a550de754d145ae945d161976176ed830c3df71b24b0",
+    "surreal": "ced1af5d19949f961c6f12805c384b8b8e8d0f6c368c5091c06259f54e3329be",
+    "c4bfb6d27c8f-1.profraw": "3e426813c26cc02e21394cf1a3d5b4ca17782e2835ab87992b167cf71af90545"
+  },
+  "scope": "^/?src/(surrealdb/[^/]+/src|src)/",
+  "analysis_seconds": 4371.5
+}

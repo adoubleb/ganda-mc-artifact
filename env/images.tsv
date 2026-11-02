@@ -1,0 +1,5 @@
+image	id	repo digest	bytes	used for
+orientdb:3.2.57	sha256:519c009bb2ae1c089a7815eaaa3d9c8617beec369c9d40cc86e3ee00faac1f64	orientdb@sha256:3cca3e3b703e011ece1b31236830ec87ab458f76911dc8aa6d76fdfdcc2f1a8a	411553085	OrientDB campaigns (JaCoCo agent attached at run time)
+ganda-cov/surrealdb:3.3.4	sha256:822485ccd608d5d882b3b72fb14d84b21601d1b786bcf09edebf4ea86747712c	(local build, not pushed)	400620972	SurrealDB campaigns (builds/surrealdb)
+ganda-cov/arangodb:3.12.11	sha256:fa36f2a303a8ff3eac473ed2101e5d5be15b10647c136259bd1262508f33124f	(local build, not pushed)	1292581061	ArangoDB campaigns (builds/arangodb)
+public.ecr.aws/b0b8h2r4/arangodb/ubuntubuildarangodb-312:24.04-f7032bef0	sha256:9e3c2042a4ec1adf46f6cb89295b7b72bbfe8ff8219e941f32ed1665257455c8	public.ecr.aws/b0b8h2r4/arangodb/ubuntubuildarangodb-312@sha256:e72f16fa3d84b501b31ec424229e32ab89ae7438ec8bef0109b77b289653ff78	3262568503	building arangod; the ArangoDB MC report runs in it

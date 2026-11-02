@@ -1,0 +1,23 @@
+[1/21] Running utility command for v8_build
+[2/21] Building errors file js/common/bootstrap/errors.js
+[3/21] Running utility command for tzdata
+[4/21] Running utility command for iculegacy_build
+[5/21] Building CXX object arangod/Aql/CMakeFiles/arango_aql.dir/Optimizer/Rule/HandleViews.cpp.o
+[6/21] Linking CXX static library bin/libarango_aql.a
+[7/21] Linking CXX static library bin/libarango_agency.a
+[8/21] Linking CXX static library bin/libarango_actions.a
+[9/21] Linking CXX static library bin/libarango_v8_no_deadline.a
+[10/21] Linking CXX static library bin/libarango.a
+[11/21] Linking CXX static library bin/libarango_lightweight.a
+[12/21] Linking CXX static library bin/libarango_vector_index.a
+[13/21] Linking CXX static library bin/libarango_system_monitor_async_registry.a
+[14/21] Linking CXX static library bin/libarango_feature_phases.a
+[15/21] Linking CXX static library bin/libarango_system_monitor_activities.a
+[16/21] Linking CXX static library bin/libarango_sharding.a
+[17/21] Linking CXX static library bin/libarango_common_rest_handler.a
+[18/21] Linking CXX static library bin/libarango_rocksdb_rest.a
+[19/21] Linking CXX static library bin/libarango_cluster_engine_rest.a
+[20/21] Linking CXX static library bin/libarango_rest_server.a
+[21/21] Linking CXX executable bin/arangod
+clang++: warning: argument unused during compilation: '-mllvm -runtime-counter-relocation' [-Wunused-command-line-argument]
+-rwxr-xr-x 1 root root 686851808 Oct 26 03:50 /build/out/bin/arangod

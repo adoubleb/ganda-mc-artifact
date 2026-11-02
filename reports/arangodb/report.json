@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "t": "meta",
+    "started": "2026-11-01T09:20:02+0800",
+    "element": "llvm_counter",
+    "profile_dir": "/home/hakam/ganda/mc-eval/eval12h-shared/arangodb-A/arangodb-A-profile",
+    "idle_seconds": 5.0,
+    "idle_every": 900.0,
+    "image": "ganda-cov/arangodb:3.12.11"
+  },
+  "seeds": 190,
+  "cases": 40470,
+  "executable_lines": 359667,
+  "covered_lines": 87405,
+  "line_coverage_pct": 24.302,
+  "compared_lines": 59349,
+  "background_lines": 22327,
+  "replicate_noise_lines": 19172,
+  "split_window_lines_dropped": 141,
+  "replicate_seeds": 190,
+  "replicate_windows": 282939,
+  "mc_pairwise_lines": 23250,
+  "mc_pairwise_lines_raw": 45496,
+  "mc_pairwise_of_covered_pct": 26.6,
+  "mc_pairwise_of_executable_pct": 6.464,
+  "zero_mc_pairwise_cases": 7699,
+  "repeats": 0,
+  "repeat_diff_lines": 0,
+  "data_model_pairs": {
+    "doc~graph": {
+      "mc_lines": 21882,
+      "pairs": 127264
+    },
+    "doc~rel": {
+      "mc_lines": 14989,
+      "pairs": 121541
+    },
+    "graph~rel": {
+      "mc_lines": 20715,
+      "pairs": 125013
+    }
+  },
+  "generators": {
+    "ir_path": {
+      "mc_pairwise_lines": 12421,
+      "compared_lines": 41287,
+      "cases": 570
+    },
+    "ir_select": {
+      "mc_pairwise_lines": 7533,
+      "compared_lines": 48168,
+      "cases": 34200
+    },
+    "ir_traversal": {
+      "mc_pairwise_lines": 19676,
+      "compared_lines": 48596,
+      "cases": 5700
+    }
+  },
+  "components": {
+    "executor": {
+      "lines": 40670,
+      "covered": 16181,
+      "background": 4844,
+      "replicate_noise": 2394,
+      "mc_pairwise": 8283,
+      "covered_pct": 39.786,
+      "mc_pairwise_of_covered_pct": 51.19,
+      "share_of_mc_pairwise_pct": 35.626
+    },
+    "planner": {
+      "lines": 18772,
+      "covered": 9329,
+      "background": 2825,
+      "replicate_noise": 1912,
+      "mc_pairwise": 4585,
+      "covered_pct": 49.696,
+      "mc_pairwise_of_covered_pct": 49.148,
+      "share_of_mc_pairwise_pct": 19.72
+    },
+    "parser": {
+      "lines": 11078,
+      "covered": 6562,
+      "background": 2422,
+      "replicate_noise": 1127,
+      "mc_pairwise": 2784,
+      "covered_pct": 59.235,
+      "mc_pairwise_of_covered_pct": 42.426,
+      "share_of_mc_pairwise_pct": 11.974
+    },
+    "graph": {
+      "lines": 8843,
+      "covered": 2419,
+      "background": 0,
+      "replicate_noise": 8,
+      "mc_pairwise": 2411,
+      "covered_pct": 27.355,
+      "mc_pairwise_of_covered_pct": 99.669,
+      "share_of_mc_pairwise_pct": 10.37
+    },
+    "expressions": {
+      "lines": 11558,
+      "covered": 3346,
+      "background": 257,
+      "replicate_noise": 331,
+      "mc_pairwise": 1755,
+      "covered_pct": 28.95,
+      "mc_pairwise_of_covered_pct": 52.451,
+      "share_of_mc_pairwise_pct": 7.548
+    },
+    "indexes": {
+      "lines": 64522,
+      "covered": 6313,
+      "background": 1199,
+      "replicate_noise": 1376,
+      "mc_pairwise": 1684,
+      "covered_pct": 9.784,
+      "mc_pairwise_of_covered_pct": 26.675,
+      "share_of_mc_pairwise_pct": 7.243
+    },
+    "storage": {
+      "lines": 27324,
+      "covered": 10249,
+      "background": 3144,
+      "replicate_noise": 3066,
+      "mc_pairwise": 810,
+      "covered_pct": 37.509,
+      "mc_pairwise_of_covered_pct": 7.903,
+      "share_of_mc_pairwise_pct": 3.484
+    },
+    "other": {
+      "lines": 44907,
+      "covered": 12717,
+      "background": 4074,
+      "replicate_noise": 4325,
+      "mc_pairwise": 516,
+      "covered_pct": 28.319,
+      "mc_pairwise_of_covered_pct": 4.058,
+      "share_of_mc_pairwise_pct": 2.219
+    },
+    "transactions": {
+      "lines": 5772,
+      "covered": 2423,
+      "background": 1089,
+      "replicate_noise": 742,
+      "mc_pairwise": 222,
+      "covered_pct": 41.979,
+      "mc_pairwise_of_covered_pct": 9.162,
+      "share_of_mc_pairwise_pct": 0.955
+    },
+    "server": {
+      "lines": 57338,
+      "covered": 14276,
+      "background": 2196,
+      "replicate_noise": 3524,
+      "mc_pairwise": 196,
+      "covered_pct": 24.898,
+      "mc_pairwise_of_covered_pct": 1.373,
+      "share_of_mc_pairwise_pct": 0.843
+    },
+    "catalog": {
+      "lines": 68883,
+      "covered": 3590,
+      "background": 277,
+      "replicate_noise": 367,
+      "mc_pairwise": 4,
+      "covered_pct": 5.212,
+      "mc_pairwise_of_covered_pct": 0.111,
+      "share_of_mc_pairwise_pct": 0.017
+    }
+  },
+  "twin": {
+    "seeds": 192,
+    "cases": 40896,
+    "covered_lines": 87383,
+    "line_coverage_pct": 24.296
+  },
+  "agreement": {
+    "mc_pairwise_jaccard_before_noise": 0.757,
+    "covered_jaccard": 0.9987
+  },
+  "inputs": {
+    "arangodb-A-windows.jsonl.gz": "7eb1e70b82431faf9dc6c71fc93e33a3c7dc81e2955caa27d240770c54b61cd0",
+    "arangodb.json": "ee37be2a49891fb295a93e36962017d9665904289cde0b62ebf351fee7c94914",
+    "arangodb-B-windows.jsonl.gz": "b7646892e25ec087f6449e1265f3ad75b60a2032db9ff54a026dc8dd2a27f931",
+    "arangod": "e4cab10c4c069de5ced5a873a09cd049032f39d54b7d8d8ca0e87c4095a3d597",
+    "8786629a0935-1.profraw": "1185c3961528d406b41853579072633fdd75e2216e989069f49255f1866745af"
+  },
+  "scope": "^/?(src|build/out)/(arangod|lib)/",
+  "analysis_seconds": 8210.0
+}

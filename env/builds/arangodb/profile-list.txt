@@ -1,0 +1,2 @@
+source:/src/arangod/*
+source:/src/lib/*

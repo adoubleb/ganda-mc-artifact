@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "t": "meta",
+    "started": "2026-11-01T09:19:52+0800",
+    "engine": "orientdb",
+    "element": "jacoco_probe",
+    "agent_includes": "com.orientechnologies.*",
+    "agent_excludes": "com.orientechnologies.orient.core.sql.parser.OrientSqlTokenManager",
+    "jacoco": "0.8.13",
+    "idle_seconds": 5.0,
+    "idle_every": 900.0
+  },
+  "seeds": 595,
+  "cases": 125489,
+  "executable_lines": 183820,
+  "covered_lines": 45655,
+  "line_coverage_pct": 24.837,
+  "compared_lines": 25741,
+  "background_lines": 6808,
+  "replicate_noise_lines": 5052,
+  "split_window_lines_dropped": 0,
+  "replicate_seeds": 592,
+  "replicate_windows": 642420,
+  "mc_pairwise_lines": 11404,
+  "mc_pairwise_lines_raw": 16779,
+  "mc_pairwise_of_covered_pct": 24.979,
+  "mc_pairwise_of_executable_pct": 6.204,
+  "zero_mc_pairwise_cases": 19118,
+  "repeats": 0,
+  "repeat_diff_lines": 0,
+  "data_model_pairs": {
+    "doc~graph": {
+      "mc_lines": 10772,
+      "pairs": 245999
+    },
+    "doc~rel": {
+      "mc_lines": 7249,
+      "pairs": 208843
+    },
+    "graph~rel": {
+      "mc_lines": 10675,
+      "pairs": 293066
+    }
+  },
+  "generators": {
+    "ir_path": {
+      "mc_pairwise_lines": 5639,
+      "compared_lines": 13994,
+      "cases": 901
+    },
+    "ir_select": {
+      "mc_pairwise_lines": 6499,
+      "compared_lines": 22215,
+      "cases": 106638
+    },
+    "ir_traversal": {
+      "mc_pairwise_lines": 9134,
+      "compared_lines": 19583,
+      "cases": 17950
+    }
+  },
+  "components": {
+    "parser": {
+      "lines": 35120,
+      "covered": 11474,
+      "background": 436,
+      "replicate_noise": 951,
+      "mc_pairwise": 6114,
+      "covered_pct": 32.671,
+      "mc_pairwise_of_covered_pct": 53.286,
+      "share_of_mc_pairwise_pct": 53.613
+    },
+    "executor": {
+      "lines": 17886,
+      "covered": 3632,
+      "background": 387,
+      "replicate_noise": 739,
+      "mc_pairwise": 1313,
+      "covered_pct": 20.306,
+      "mc_pairwise_of_covered_pct": 36.151,
+      "share_of_mc_pairwise_pct": 11.514
+    },
+    "planner": {
+      "lines": 3222,
+      "covered": 1923,
+      "background": 44,
+      "replicate_noise": 176,
+      "mc_pairwise": 867,
+      "covered_pct": 59.683,
+      "mc_pairwise_of_covered_pct": 45.086,
+      "share_of_mc_pairwise_pct": 7.603
+    },
+    "indexes": {
+      "lines": 16593,
+      "covered": 5201,
+      "background": 186,
+      "replicate_noise": 256,
+      "mc_pairwise": 791,
+      "covered_pct": 31.345,
+      "mc_pairwise_of_covered_pct": 15.209,
+      "share_of_mc_pairwise_pct": 6.936
+    },
+    "other": {
+      "lines": 38283,
+      "covered": 7081,
+      "background": 1641,
+      "replicate_noise": 894,
+      "mc_pairwise": 717,
+      "covered_pct": 18.496,
+      "mc_pairwise_of_covered_pct": 10.126,
+      "share_of_mc_pairwise_pct": 6.287
+    },
+    "storage": {
+      "lines": 29513,
+      "covered": 9408,
+      "background": 3124,
+      "replicate_noise": 910,
+      "mc_pairwise": 669,
+      "covered_pct": 31.877,
+      "mc_pairwise_of_covered_pct": 7.111,
+      "share_of_mc_pairwise_pct": 5.866
+    },
+    "expressions": {
+      "lines": 5387,
+      "covered": 882,
+      "background": 0,
+      "replicate_noise": 184,
+      "mc_pairwise": 350,
+      "covered_pct": 16.373,
+      "mc_pairwise_of_covered_pct": 39.683,
+      "share_of_mc_pairwise_pct": 3.069
+    },
+    "catalog": {
+      "lines": 7765,
+      "covered": 2939,
+      "background": 192,
+      "replicate_noise": 148,
+      "mc_pairwise": 217,
+      "covered_pct": 37.849,
+      "mc_pairwise_of_covered_pct": 7.383,
+      "share_of_mc_pairwise_pct": 1.903
+    },
+    "graph": {
+      "lines": 954,
+      "covered": 232,
+      "background": 0,
+      "replicate_noise": 2,
+      "mc_pairwise": 205,
+      "covered_pct": 24.319,
+      "mc_pairwise_of_covered_pct": 88.362,
+      "share_of_mc_pairwise_pct": 1.798
+    },
+    "server": {
+      "lines": 27563,
+      "covered": 2332,
+      "background": 528,
+      "replicate_noise": 748,
+      "mc_pairwise": 112,
+      "covered_pct": 8.461,
+      "mc_pairwise_of_covered_pct": 4.803,
+      "share_of_mc_pairwise_pct": 0.982
+    },
+    "transactions": {
+      "lines": 1534,
+      "covered": 551,
+      "background": 270,
+      "replicate_noise": 44,
+      "mc_pairwise": 49,
+      "covered_pct": 35.919,
+      "mc_pairwise_of_covered_pct": 8.893,
+      "share_of_mc_pairwise_pct": 0.43
+    }
+  },
+  "twin": {
+    "seeds": 592,
+    "cases": 124856,
+    "covered_lines": 45652,
+    "line_coverage_pct": 24.835
+  },
+  "agreement": {
+    "mc_pairwise_jaccard_before_noise": 0.9415,
+    "covered_jaccard": 0.9999
+  },
+  "inputs": {
+    "orientdb-A-windows.jsonl.gz": "c79ac5b42ddcdf76f8f029307f2c2e13abe017087bc421188c1b0386cf29f427",
+    "orientdb.json": "2931a95d765ae383136d93964a74d39b1385cd25306d941a210a19144d0332c1",
+    "orientdb-B-windows.jsonl.gz": "f6c073672e6c1906acfdfcd07b9ccdf39a6b2681a3958782b5962d8ef72f7999",
+    "probe-lines-282bbeb41447.jsonl.gz": "df651dfdbe1da963d85b98f69b43e9a612ee219ffb14c100abc6e07e906e0072"
+  },
+  "scope": "^com/orientechnologies/",
+  "analysis_seconds": 2833.8
+}
