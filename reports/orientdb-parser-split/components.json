@@ -1,0 +1,10 @@
+{
+  "engine": "orientdb",
+  "paths": "<package dir>/<SourceFile>; OrientDB's sql/parser package only, split into the JavaCC/JJTree-generated parser and the AST classes",
+  "scope": "^com/orientechnologies/orient/core/sql/parser/",
+  "components": [
+    ["^com/orientechnologies/orient/core/sql/parser/(OrientSql|OrientSqlTokenManager|OrientSqlConstants|OrientSqlTreeConstants|JJTOrientSqlState|JavaCharStream|SimpleCharStream|Token|TokenMgrError|ParseException)\\.java$", "parser-generated"],
+    ["^com/orientechnologies/orient/core/sql/parser/(O[A-Z][^/]*|SimpleNode)\\.java$", "parser-ast"],
+    ["^com/orientechnologies/orient/core/sql/parser/", "parser-other"]
+  ]
+}

@@ -58,6 +58,13 @@ def main():
     print("|---" * (len(ENGINES) + 1) + "|")
     for p in pairs:
         print(f"| {p} | " + " | ".join(pct(reports[e]["data_model_pairs"][p]["mc_lines"], reports[e]["covered_lines"]) for e in ENGINES) + " |")
+    split = json.loads((here / "reports" / "orientdb-parser-split" / "report.json").read_text())
+    print("\nOrientDB's parser package, the generated parser against the AST classes\n")
+    print("| part | executable | covered | MC lines | share of the parser's MC % | MC % of covered |")
+    print("|---|---|---|---|---|---|")
+    for name, c in split["components"].items():
+        print(f"| {name} | {c['lines']:,} | {c['covered']:,} | {c['mc_pairwise']:,} | {pct(c['mc_pairwise'], split['mc_pairwise_lines'])} | {pct(c['mc_pairwise'], c['covered'])} |")
+    print(f"| total (Table 8's parser row) | {split['executable_lines']:,} | {split['covered_lines']:,} | {split['mc_pairwise_lines']:,} | 100.0 | {pct(split['mc_pairwise_lines'], split['covered_lines'])} |")
     print("\nThe runs\n")
     print("| | " + " | ".join(NAMES[e] for e in ENGINES) + " |")
     print("|---" * (len(ENGINES) + 1) + "|")

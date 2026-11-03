@@ -34,7 +34,7 @@ replicate noise; B's seeds, cases and coverage are under `twin` in each `report.
 ## The paper's tables
 
 `python3 table.py` prints Tables 8, 9 and 10 (line coverage and MC per component), Ganda's
-rows of Table 11, the MC of each data-model pair and the runs' counts from the
+rows of Table 11, the MC of each data-model pair, OrientDB's parser split and the runs' counts from the
 `report.json` files. The per-component tables fold the reports' components into the
 paper's rows (`GROUPS` in `table.py`: transactions, catalog and server are `other`;
 SurrealDB's graph traversal is part of its executor and its transactions part of storage).
@@ -53,6 +53,21 @@ SurrealDB's graph traversal is part of its executor and its transactions part of
 | cases | 125,489 | 90,768 | 40,470 |
 | twin Jaccard, MC before noise | 0.9415 | 0.9866 | 0.757 |
 
+### OrientDB's parser, split
+
+`reports/orientdb-parser-split/` is OrientDB's report again over the same logs, its scope
+narrowed to the `sql/parser` package and that package split into the parser JavaCC and
+JJTree generate (`OrientSql.java` and its support files), the AST classes (`O*` and
+`SimpleNode`) and the other helpers (`components.json` beside it). The background and the
+replicate noise are taken out line by line, so its totals are Table 8's parser row
+exactly (6,114 MC lines of 11,474 covered).
+
+| part | executable | covered | MC lines | share of the parser's MC % |
+|---|---|---|---|---|
+| generated parser | 15,760 | 5,695 | 3,511 | 57.4 |
+| AST classes | 19,202 | 5,690 | 2,533 | 41.4 |
+| other helpers | 158 | 89 | 70 | 1.1 |
+
 ArangoDB's twins agree less on MC than the other engines' do (Jaccard 0.757 before the
 replicate noise is taken out), while their covered lines agree at 0.9987. Every line on
 which they differ for the same variant is removed as replicate noise, so its figure is
@@ -63,6 +78,7 @@ the conservative one.
 ```
 reports/<engine>/report.json     every number, per component, generator and data-model pair
 reports/<engine>/report.md       the same as tables
+reports/orientdb-parser-split/   OrientDB's parser package split into the generated parser and the AST classes (with its components.json)
 table.py                         the paper's tables from the report.json files
 env/env.txt                      host, Python, image ids, the exact campaign commands
 env/code.tgz                     the code that ran the campaigns (code.tgz.sha256 is the run's own record)
@@ -79,8 +95,8 @@ MANIFEST.sha256                  every file's checksum
 
 - The campaigns ran the code in `env/code.tgz`, the `metamorphic-coverage` branch at
   `d9bc68f`.
-- The reports: OrientDB and SurrealDB were computed with `53c5e8e`, and ArangoDB with
-  `0891a12`. The commits in between change only how the report is computed (a dead
+- The reports: OrientDB and SurrealDB were computed with `53c5e8e`, and ArangoDB and
+  OrientDB's parser split with `0891a12`. The commits in between change only how the report is computed (a dead
   worker's jobs run again, a seed's counters are summed in as it is read, a bounded
   cache), not what it computes. A test checks that the output is unchanged.
 
